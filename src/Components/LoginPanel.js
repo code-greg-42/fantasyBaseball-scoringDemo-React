@@ -4,11 +4,11 @@ import { ethers } from 'ethers'
 import { Fragment, useState, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
-const contractAddress = '0xdf3a0252D5c75640380ab29b2a55b7534Aa0De5B'
-const url = process.env.REACT_APP_ALCHEMY_RINKEBY_URL;
-const provider = new ethers.providers.JsonRpcProvider(url);
-const privateKey = process.env.REACT_APP_RINKEBY_PRIVATE_KEY;
-const wallet = new ethers.Wallet(privateKey, provider);
+const contractAddress = '0xdf3a0252D5c75640380ab29b2a55b7534Aa0De5B';
+const demoUrl = 'https://eth-rinkeby.alchemyapi.io/v2/2O0Sv9b_YJgqPnuyj0ynbT_Wz76lOZAn';
+const provider = new ethers.providers.JsonRpcProvider(demoUrl);
+const demoPrivateKey = '1cd4c4adff9cd49fe1b23624525c59ed0580a9a1020d5782ac2105943610436e';
+const wallet = new ethers.Wallet(demoPrivateKey, provider);
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
