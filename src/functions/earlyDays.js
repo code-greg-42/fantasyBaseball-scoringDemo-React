@@ -2,7 +2,7 @@ import {getPlayerSeasonStats} from "./mlbApi";
 
 const axios = require('axios').default;
 
-const url = "http://statsapi.mlb.com";
+const url = "https://statsapi.mlb.com";
 
 function testPointTotals(stats) {
     return stats.totalBases + (stats.hits * 1.5) + (stats.rbi * 0.75) + (stats.runs * 0.75) + stats.freePasses + (stats.homeRuns * 1.25) + stats.stolenBases;

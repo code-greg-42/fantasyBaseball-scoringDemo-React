@@ -1,6 +1,6 @@
 const axios = require('axios').default;
 
-const url = "http://statsapi.mlb.com";
+const url = "https://statsapi.mlb.com";
 const highlightKeywords = ["homer", "home-run", "home-runs", "slam", "slams", "grand-slams", "grand-slam", "dinger", "smash", "smashes", "homers", "blast", "blasts", "bomb", "bombs", "dingers", "walkoff", "walk-off", "walk off", "home run", "home runs", "grand slams", "grand slam", "launches", "blasts", "crushes", "crushed", "luanched"]
 
 export async function getHighlights(playerId, teamId) {

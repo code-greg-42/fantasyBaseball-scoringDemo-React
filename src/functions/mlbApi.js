@@ -1,7 +1,7 @@
 import { hitterInfo } from "./nameStorage"
 const axios = require('axios').default;
 
-const url = "http://statsapi.mlb.com";
+const url = "https://statsapi.mlb.com";
 
 export async function getPlayerNames() {
     let playerList = {};
